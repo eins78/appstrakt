@@ -45,14 +45,8 @@ header {
 }
 article, footer {
   width: 62%;
-  {{^secret}} {{! only rendered if public }}
   min-width: 400px;
   max-width: 550px;
-  {{/secret}}
-  {{#secret}} {{! only rendered if not public }}
-  min-width: 470px;
-  max-width: 650px;
-  {{/secret}}
   background-color: 
   #fff;
   padding: 0.8em 20px;
