@@ -1,3 +1,13 @@
+/* BOOTSTRAP from CDN */
+@import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css');
+
+/* ICONS - Font Awesome from CDN */
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css');
+
+/* WEBFONTS - Lato, Source Code Pro from Google Webfonts */
+@import url('//fonts.googleapis.com/css?family=Lato:300,400|Source+Code+Pro');
+
+/* GENERIC STYLES */
 body { 
   margin: 4em auto;
   background: hsl(0, 0%, 66%);
