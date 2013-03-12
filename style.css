@@ -82,7 +82,8 @@ a:hover {
 header {
   padding-bottom: 0.8em;
 }
-article, 
+section,
+article,
 footer {
   width: 62%;
   min-width: 400px;
