@@ -20,16 +20,30 @@
 */
 body { 
   margin: 4em auto;
-  background: hsl(0, 0%, 67%);
+  background: hsl(0, 0%, 61.8%);
   font-family: 'Lato', sans-serif;
   font-size: 12pt;
   text-align: center;
   color: hsl(0, 0%, 22%);
-}
+  text-rendering: optimizelegibility !important;
+  }
 
 kbd, code, tt, pre {
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 400; /*Source Code Pro Normal*/
+}
+
+.dark {
+  color: hsl(0, 0%, 61.8%);
+  background-color: hsl(0, 0%, 22%);
+}
+
+.muted {
+  color: hsla(0, 0%, 22%, 0.618);
+}
+
+.dark .muted {
+  color: hsla(0, 0%, 61.8%, 0.618);
 }
 
 /* whitespace */
@@ -39,9 +53,9 @@ p + table, table + table {
 
 /* selections*/
 ::selection , ::-moz-selection {
-  background: hsla(188, 78%, 34%, 0.67);
+  background: hsla(188, 78%, 34%, 0.618);
   color: hsla(0, 0%, 100%, 1);
-  text-shadow: 0px 0px 2px hsla(0, 0%, 0%, 0.67);
+  text-shadow: 0px 0px 2px hsla(0, 0%, 0%, 0.618);
 }
 
 /*
@@ -52,7 +66,7 @@ a, a:link, a:active {
 }
 a:hover {
   color: hsl(188, 100%, 18%);
-  text-shadow: 0px 0px 2px hsla(188, 100%, 67%, 0.67);
+  text-shadow: 0px 0px 2px hsla(188, 100%, 61.8%, 0.618);
   text-decoration: none;  
 }
 
@@ -100,11 +114,22 @@ table {
   APP LAYOUT
 */
 
+/* Golden fucking Ratio */
+.golden-big,
 header,
 section,
 article,
 footer {
-  width: 62%;
+  width: 61.8%;
+}
+.golden-small {
+  width: 38.2%;
+}
+
+header,
+section,
+article,
+footer {
   min-width: 400px;
   max-width: 550px;
   background-color: 
@@ -122,14 +147,13 @@ footer {
 header h1 {
   font-weight: normal;
   color: 
-    hsla(0, 0%, 33%, 0.5);
+    hsla(0, 0%, 30.9%, 0.5);
   text-shadow:
     1px 1px 2px hsla(0, 0%, 100%, 1),
-    0px 0px 0px hsla(0, 0%, 0%, 0.33),
+    0px 0px 0px hsla(0, 0%, 0%, 0.3),
     1px 1px 0px hsla(0, 0%, 100%, 1);
 }
 
 footer {
-  font-size: 11pt;
-  background-color: hsl(0, 0%, 22%);
+  font-size: 9pt;
 }
