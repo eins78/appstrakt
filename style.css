@@ -1,13 +1,23 @@
-/* BOOTSTRAP from CDN */
+/*
+  BOOTSTRAP from CDN
+*/
 @import url('//netdna.bootstrapcdn.com/twitter-bootstrap/2.2.2/css/bootstrap.no-icons.min.css');
 
-/* ICONS - Font Awesome from CDN */
+/*
+  ICONS
+  - Font Awesome from CDN
+*/
 @import url('//netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css');
 
-/* WEBFONTS - Lato, Source Code Pro from Google Webfonts */
+/*
+  WEBFONTS
+   - Lato, Source Code Pro from Google Webfonts
+*/
 @import url('//fonts.googleapis.com/css?family=Lato:300,400|Source+Code+Pro');
 
-/* GENERIC STYLES */
+/*
+  BASE TYPO
+*/
 body { 
   margin: 4em auto;
   background: hsl(0, 0%, 66%);
@@ -20,6 +30,17 @@ kbd, code, tt, pre {
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 400; /*Source Code Pro Normal*/
 }
+/* whitespace */
+p + table, table + table {
+  margin-top: 1em;
+}
+
+/*
+  TABLES
+*/
+table {
+  margin: 1em auto;
+}
 h1,
 .table th {
   font-weight: 400; /*Lato Normal*/
@@ -27,15 +48,23 @@ h1,
 .table td {
   font-weight: 300; /*Lato Book*/
 }
+/* table centering*/
+/* first, make them all centered*/
 .table tr th, .table tr td {
   text-align: center;
 }
-.table tr th:first-child, .table tr td:first-child {
-  text-align: left;
-}
+/* then, make last rows left */
 .table tr th:last-child, .table tr td:last-child {
   text-align: right;
 }
+/* lastly, make first row right (so 1 row is right, too) */
+.table tr th:first-child, .table tr td:first-child {
+  text-align: left;
+}
+
+/*
+  ALERTS
+*/
 .alert {
   text-align: inherit;
 }
@@ -53,7 +82,8 @@ a:hover {
 header {
   padding-bottom: 0.8em;
 }
-article, footer {
+article, 
+footer {
   width: 62%;
   min-width: 400px;
   max-width: 550px;
